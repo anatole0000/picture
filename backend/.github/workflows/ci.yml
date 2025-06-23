@@ -1,0 +1,43 @@
+name: Monorepo CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-services:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        service:
+          - user-service
+          - api-gateway
+          - statistics-service
+          - comment-service
+          - notification-service
+          - progress-service
+          - submission-service
+          - logiclab-service
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        working-directory: ${{ matrix.service }}
+        run: npm ci
+
+      - name: Build TypeScript (if any)
+        working-directory: ${{ matrix.service }}
+        run: npx tsc --noEmit
+
+      - name: Run Tests
+        working-directory: ${{ matrix.service }}
+        run: npm test
