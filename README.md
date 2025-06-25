@@ -1,54 +1,54 @@
-# 🧠 LogicLab
+# 🧠 LogicLab Platform – Fullstack Monorepo
 
-LogicLab is a full-stack platform designed to help users practice and evaluate logical thinking through question-based exercises. The platform supports both user-level features and an admin dashboard for managing exercises.
-
-## 📁 Project Structure
-
+LogicLab is a fullstack web platform to help users practice logical thinking via interactive exercises.
 
 ---
 
-## 🚀 Features
+## 📁 Folder Structure
 
-### For Users:
-- 👤 Sign up / Login
-- 🔍 Practice logic questions
-- 📜 View exercise history
-- 📈 Auto-scoring of submissions
+logiclab/
+├── frontend/ # React + TypeScript app
+├── backend/ # Node.js monorepo with microservices
+└── README.md # This file
 
-### For Admins:
-- ➕ Create/edit/delete exercises
-- 📋 View all exercises
-- 📊 Dashboard with basic stats
+## 🚀 Getting Started (Local Development)
 
----
-
-## 🛠 Tech Stack
-
-| Layer     | Tech Details                      |
-|-----------|-----------------------------------|
-| Frontend  | React, TypeScript, React Router   |
-| Backend   | Node.js, Express, PostgreSQL      |
-| Auth      | JWT-based Authentication          |
-| Styling   | Inline styles or CSS (custom)     |
-
----
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the Repository
+### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/logiclab.git
+git clone https://github.com/your-org/logiclab.git
 cd logiclab
 
-2. Start the Backend
+2. Start Backend
 
 cd backend
+docker-compose up --build
+🧪 You can also run individual services:
+
+
+cd backend/user-service
+npm run dev
+✅ Make sure Redis, Kafka, PostgreSQL are up via Docker.
+
+3. Start Frontend
+
+cd frontend
 npm install
 npm run dev
 
-3. Start the Frontend
+🧪 Testing
+Backend microservices use Jest or k6
 
-cd ../frontend
-npm install
-npm run dev
+Frontend uses Vitest or React Testing Library
+
+🌐 Deployment
+Certs for local HTTPS via mkcert (stored in each microservice)
+
+Future plan: Production via Nginx + Let's Encrypt
+
+🛡️ Authentication Flow
+JWT-based auth
+
+Forgot/reset password flow (with Redis job queue)
+
+Protected routes on frontend

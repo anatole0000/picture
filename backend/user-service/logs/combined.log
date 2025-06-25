@@ -2035,3 +2035,13 @@
 [2025-06-22T23:57:20.305Z] HTTP: ::1 - - [22/Jun/2025:23:57:20 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
 [2025-06-23T00:04:07.055Z] HTTP: ::1 - - [23/Jun/2025:00:04:07 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
 [2025-06-23T00:04:07.070Z] HTTP: ::1 - - [23/Jun/2025:00:04:07 +0000] "GET /auth/me HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+[2025-06-25T14:47:17.066Z] INFO: 🚀 User Service running (dev) at http://localhost:4001
+[2025-06-25T14:52:02.409Z] INFO: 🚀 User Service running (dev) at http://localhost:4001
+[2025-06-25T14:53:44.398Z] ERROR: ❌ TLS certs not found. Falling back to HTTP.
+[2025-06-25T14:53:44.408Z] INFO: ⚠️ User Service running on HTTP (no TLS) at http://localhost:4001
+[2025-06-25T14:54:17.700Z] ERROR: ❌ TLS certs not found. Falling back to HTTP.
+[2025-06-25T14:54:17.707Z] INFO: ⚠️ User Service running on HTTP (no TLS) at http://localhost:4001
+[2025-06-25T14:55:03.227Z] ERROR: ❌ TLS certs not found. Falling back to HTTP.
+[2025-06-25T14:55:03.235Z] INFO: ⚠️ User Service running on HTTP (no TLS) at http://localhost:4001
+[2025-06-25T14:55:11.123Z] INFO: ✅ User Service running with HTTPS on port 4001
+[2025-06-25T14:55:35.682Z] HTTP: ::1 - - [25/Jun/2025:14:55:35 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"

@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "worker": "ts-node src/workers/email.worker.ts"
+    "worker": "ts-node src/workers/email.worker.ts",
+    "dev:ssl": "cross-env NODE_ENV=production ts-node-dev src/server.ts"
   },
   "keywords": [],
   "author": "",

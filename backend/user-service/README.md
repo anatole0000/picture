@@ -99,3 +99,8 @@ All logs: stored in logs/combined.log
 📜 OpenAPI / Swagger
 
 swagger-jsdoc with Swagger UI
+
+To use ssl
+
+npm run dev:ssl 
+
