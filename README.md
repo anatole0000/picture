@@ -52,3 +52,11 @@ JWT-based auth
 Forgot/reset password flow (with Redis job queue)
 
 Protected routes on frontend
+
+
+## 📚 Documentation
+
+- See [`frontend/README.md`](./frontend/README.md) for setup and usage instructions of the React frontend.
+- See [`backend/README.md`](./backend/README.md) for details about the backend services and how to run them.
+
+Protected routes on frontend
